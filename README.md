@@ -1,6 +1,3 @@
-# DigitNN
-This repository details the process of coding a neural network from basic mathematical principles and minimal libraries, trained to recognise handwritten digits.
-
 # Digit NN — Handwritten Digit Recogniser
 
 A handwritten digit classifier built from scratch in C++, trained on the MNIST dataset. No ML libraries, just raw neural network implementation with forward pass, backpropagation, and momentum-based gradient descent.
