@@ -27,15 +27,11 @@ A fully connected feedforward neural network:
   - Moment-based deskewing
   - Morphological closing (3×3 dilate + erode)
 
-## Building
-
-Using MinGW/g++ (MSYS2):
-
 ## Running
 
-fix.cpp press **F5** in VS Code.
+Using MinGW/g++ (MSYS2)
 
-> **Note:** Running by typing the path directly in PowerShell without `&` will not execute the binary due to a PowerShell quirk with paths containing spaces.
+fix.cpp press **F5** in VS Code.
 
 ## Project Structure
 
