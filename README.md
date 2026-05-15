@@ -27,40 +27,13 @@ A fully connected feedforward neural network:
   - Moment-based deskewing
   - Morphological closing (3×3 dilate + erode)
 
-## Dependencies
-
-- [stb_image.h](https://github.com/nothings/stb) — single-header image loading (included in repo)
-- MNIST dataset files (not included — see below)
-
-## Getting the Data
-
-Download the MNIST dataset from [http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/) and place the files in the `data/` folder:
-
-```
-data/
-  train-images-idx3-ubyte
-  train-labels-idx1-ubyte
-  t10k-images.idx3-ubyte
-  t10k-labels.idx1-ubyte
-```
-
 ## Building
 
 Using MinGW/g++ (MSYS2):
 
-```powershell
-g++ -O2 -static fix.cpp -o fix.exe
-```
-
 ## Running
 
-In PowerShell, always run with `&`:
-
-```powershell
-& ".\fix.exe"
-```
-
-Or press **F5** in VS Code.
+fix.cpp press **F5** in VS Code.
 
 > **Note:** Running by typing the path directly in PowerShell without `&` will not execute the binary due to a PowerShell quirk with paths containing spaces.
 
@@ -74,7 +47,7 @@ Digit NN/
 ├── data/
 │   ├── t10k-images.idx3-ubyte
 │   ├── t10k-labels.idx1-ubyte
-│   └── Test_Digit=*.png # Your own test images
+│   └── Test_Digit=*.png # test images
 ├── parameters/
 │   └── perameters.txt   # Saved network weights
 └── .vscode/
@@ -102,3 +75,6 @@ net.test("path\\to\\your\\image.png");
 ```
 
 The image can be any size: it will be rescaled, deskewed, and normalised to 28×28 automatically.
+
+## Next Steps and Reflections
+Overall the project was very sucessful, with minimal trainign the NN has acheived up to 95% accuracy on handwritten digits and has features which allow it to be easily applied, the project taught me the raw mathematics behind neural networks and i would like to now explore its applications especially in robotics. This would be quite easy to implement given enough training data since we could just change the MNIST data set for any other data set formatted in the same way and retrain the model, to give it a new purpose. Otherwise, full comments are still needed to properly document the process.
