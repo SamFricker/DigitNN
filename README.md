@@ -1,4 +1,4 @@
-# Digit NN — Handwritten Digit Recogniser
+# Digit NN: Handwritten Digit Recogniser
 
 A handwritten digit classifier built from scratch in C++, trained on the MNIST dataset. No ML libraries, just raw neural network implementation with forward pass, backpropagation, and momentum-based gradient descent.
 
