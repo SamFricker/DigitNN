@@ -11,7 +11,7 @@ A fully connected feedforward neural network:
 - **Input layer:** 784 nodes (28×28 pixel image)
 - **Hidden layer 1:** 64 nodes, sigmoid activation
 - **Hidden layer 2:** 16 nodes, sigmoid activation
-- **Output layer:** 10 nodes (digits 0–9), sigmoid activation
+- **Output layer:** 10 nodes (digits 0-9), sigmoid activation
 
 ## Features
 
