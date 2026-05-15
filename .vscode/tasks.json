@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: g++.exe build and run active file",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -O2 -static '${file}' -o '${fileDirname}\\${fileBasenameNoExtension}.exe'; Start-Process -NoNewWindow -Wait '${fileDirname}\\${fileBasenameNoExtension}.exe'",
+            "options": {
+                "cwd": "${fileDirname}",
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": ["-NoProfile", "-Command"]
+                }
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
