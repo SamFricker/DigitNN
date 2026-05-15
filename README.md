@@ -6,7 +6,7 @@ A handwritten digit classifier built from scratch in C++, trained on the MNIST d
 
 A fully connected feedforward neural network:
 
-![Nerual Net](images\architecture.png)
+![Neural Network Architecture](images/architecture.png)
 
 - **Input layer:** 784 nodes (28×28 pixel image)
 - **Hidden layer 1:** 64 nodes, sigmoid activation
